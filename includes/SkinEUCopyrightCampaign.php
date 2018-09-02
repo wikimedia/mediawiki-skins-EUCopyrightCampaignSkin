@@ -31,6 +31,15 @@ class SkinEUCopyrightCampaign extends SkinTemplate {
 	public $template = 'EUCopyrightCampaignSkinTemplate';
 
 	/**
+	 * Source: https://en.wikipedia.org/wiki/Languages_of_the_European_Union
+	 *
+	 * @var array
+	 */
+	public $euMemberLanguagesLanguageCodes = [ 'bg', 'hr', 'cs', 'da', 'nl', 'en',
+		'et', 'fi', 'fr', 'de', 'el', 'hu', 'ga', 'it', 'lv', 'lt', 'mt',
+		'pl', 'pt', 'ro', 'sk', 'sl', 'es', 'sv' ];
+
+	/**
 	 * Initializes output page and sets up skin-specific parameters
 	 * @param OutputPage $out Object to initialize
 	 */
@@ -39,6 +48,10 @@ class SkinEUCopyrightCampaign extends SkinTemplate {
 
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1' );
 		$out->addModules( 'skins.eucopyrightcampaign.js' );
+		$out->addJsConfigVars(
+			'euccLanguageCodes',
+			$this->euMemberLanguagesLanguageCodes
+		);
 		$out->enableOOUI();
 	}
 
@@ -61,6 +74,6 @@ class SkinEUCopyrightCampaign extends SkinTemplate {
 	 * @return bool
 	 */
 	public function shouldPreloadLogo() {
-		return true;
+		return false;
 	}
 }

@@ -12,13 +12,6 @@
 	"requires": {
 		"MediaWiki": ">= 1.29.0"
 	},
-	"attributes": {
-		"EventLogging": {
-			"Schemas": {
-				"EUCCVisit": 18340058
-			}
-		}
-	},
 	"ValidSkinNames": {
 		"eucopyrightcampaign": "EUCopyrightCampaign"
 	},

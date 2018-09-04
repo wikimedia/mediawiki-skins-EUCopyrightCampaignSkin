@@ -13,10 +13,7 @@
 			}
 		} );
 
-		var languageCodeWhitelist = ['bg', 'hr', 'cs', 'da', 'nl', 'en',
-			'et', 'fi', 'fr', 'de', 'el', 'hu', 'ga', 'it', 'lv', 'lt', 'mt',
-			'pl', 'pt', 'ro', 'sk', 'sl', 'es', 'sv' ];
-
+		var languageCodeWhitelist = mw.config.get( 'euccLanguageCodes' );
 		var languageSelectorBtn = OO.ui.infuse( 'language-select-button' );
 		languageSelectorBtn.on( 'change', function( value ) {
 			if( languageCodeWhitelist.indexOf( value ) === -1 ) {
@@ -25,17 +22,6 @@
 
 			window.location.search = 'uselang=' + value; //Reloads the page
 		} );
-
-		var country = 'unknown';
-		if( window.Geo && window.Geo.country ) {
-			country = window.Geo.country;
-		}
-		var trackData = {
-			country: country,
-			language: mw.config.get( 'wgUserLanguage' )
-		};
-
-		mw.track( 'event.EUCCVisit', trackData );
 	});
 
 })( mediaWiki, jQuery, OO );

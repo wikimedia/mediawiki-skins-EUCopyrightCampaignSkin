@@ -85,16 +85,12 @@ class EUCopyrightCampaignSkinTemplate extends BaseTemplate {
 	}
 
 	private function printLanguageSelector() {
-		// Source: https://en.wikipedia.org/wiki/Languages_of_the_European_Union
-		$euMemberLanguagesLanguageCodes = [ 'bg', 'hr', 'cs', 'da', 'nl', 'en',
-			'et', 'fi', 'fr', 'de', 'el', 'hu', 'ga', 'it', 'lv', 'lt', 'mt',
-			'pl', 'pt', 'ro', 'sk', 'sl', 'es', 'sv' ];
-		$labels = array_map( 'strtoupper', $euMemberLanguagesLanguageCodes );
+		$labels = array_map( 'strtoupper', $this->getSkin()->euMemberLanguagesLanguageCodes );
 		$options = [];
 
-		foreach ( $euMemberLanguagesLanguageCodes as $idx => $languageCode ) {
+		foreach ( $this->getSkin()->euMemberLanguagesLanguageCodes as $idx => $languageCode ) {
 			$options[] = [
-				'label' => $labels[$idx],
+				'label' => $labels[ $idx ],
 				'data' => $languageCode
 			];
 		}
@@ -105,7 +101,7 @@ class EUCopyrightCampaignSkinTemplate extends BaseTemplate {
 		// In anonymous context this is chosen by "Accept-Language" header,
 		// within the Extension:UniversalLanguageSelector
 		$currentLangCode = $this->getSkin()->getLanguage()->getCode();
-		if ( !in_array( $languageCode, $euMemberLanguagesLanguageCodes ) ) {
+		if ( !in_array( $languageCode, $this->getSkin()->euMemberLanguagesLanguageCodes ) ) {
 			// Fallback if unsupported language
 			$currentLangCode = 'en';
 		}

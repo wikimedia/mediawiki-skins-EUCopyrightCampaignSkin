@@ -22,6 +22,12 @@
 
 			window.location.search = 'uselang=' + value; //Reloads the page
 		} );
+
+		var trackData = {
+			language: mw.config.get( 'wgUserLanguage' )
+		};
+
+		mw.track( 'event.EUCCVisit', trackData );
 	});
 
 })( mediaWiki, jQuery, OO );

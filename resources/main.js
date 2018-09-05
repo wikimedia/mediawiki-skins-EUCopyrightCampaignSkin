@@ -20,7 +20,10 @@
 				return;
 			}
 
-			window.location.search = 'uselang=' + value; //Reloads the page
+			// Reloads the page
+			window.location.search =
+				'title=' + encodeURIComponent( mw.config.get( 'wgPageName' ) ) +
+				'&uselang=' + encodeURIComponent( value );
 		} );
 
 		var trackData = {

@@ -11,7 +11,6 @@
 	"euccs-take-action-text" : "Text above the form",
 	"euccs-call-to-action-heading-html": "Main heading",
 	"euccs-call-to-action-text": "Call to action long text",
-	"euccs-select-language-tooltip": "Tooltip for language selection drop-down",
 	"euccs-footer-links": "Specifies the links in the footer area of this skin",
 	"euccs-trademarks-hint": "Information about trademarks in the footer",
 	"euccs-licence-hint": "Information about the licence in the footer",

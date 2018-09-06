@@ -15,9 +15,15 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-weight: bold;
-	border-bottom: none;
+	border-bottom: 0;
 	margin: 0;
 	line-height: initial;
 	padding-bottom: 0.1em;
@@ -28,28 +34,33 @@ h1 {
 	line-height: 38px;
 
 	em {
-		color: #DD3333;
+		color: #d33;
 		font-style: normal;
 	}
 }
 
 .highlight {
-	background-image: linear-gradient(to right, yellow 50%, transparent 50%);
+	background-image: linear-gradient( to right, yellow 50%, transparent 50% );
 	background-size: 200%;
 	background-position: 100%;
 	animation-name: highlight-grow;
 	animation-duration: 1s;
-	animation-timing-function:ease-out;
-	animation-delay:2s;
+	animation-timing-function: ease-out;
+	animation-delay: 2s;
 	animation-fill-mode: forwards;
 }
 
 @keyframes highlight-grow {
-	0% { background-position: 100% }
-	100% { background-position: 0% }
+	0% {
+		background-position: 100%;
+	}
+	100% {
+		background-position: 0%;
+	}
 }
 
-#call-to-action-section, #take-action-section {
+#call-to-action-section,
+#take-action-section {
 	p {
 		font-family: Georgia, serif;
 		font-size: 18px;
@@ -58,21 +69,22 @@ h1 {
 		font-stretch: normal;
 		line-height: 1.33;
 		letter-spacing: normal;
-		color: #000000;
+		color: #000;
 		margin-top: 0.4em;
 		margin-bottom: 0.7em;
 	}
 }
 
-#buttons, #intro-content {
+#buttons,
+#intro-content {
 	.take-action-button {
-		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+		box-shadow: 0 4px 4px 0 rgba( 0, 0, 0, 0.05 ), 0 6px 20px 0 rgba( 0, 0, 0, 0.05 );
 	}
 
 	.take-action-button > a.oo-ui-buttonElement-button {
-		background-color: #DD3333;
-		border-color: #DD3333;
-		color: #FFF;
+		background-color: #d33;
+		border-color: #d33;
+		color: #fff;
 	}
 }
 
@@ -99,7 +111,7 @@ h1 {
 
 #wikimedia-header > a {
 	display: flex;
-	align-items:center;
+	align-items: center;
 	height: 36px;
 	vertical-align: middle;
 	color: #000;
@@ -128,9 +140,7 @@ h1 {
 }
 
 html.client-nojs {
-	#form-content {
-		display: none;
-	}
+	#form-content,
 	.take-action-button {
 		display: none;
 	}

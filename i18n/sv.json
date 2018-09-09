@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiPhoenix"
+		]
+	},
+	"euccs-skinname-eucopyrightcampaign": "EUCopyrightCampaignSkin",
+	"euccs-eucopyrightcampaign-skin-desc": "Speciellt utseende för kampanjen om EU-parlamentets upphovsrättsröstning i 2018",
+	"euccs-take-action-label": "Vidta åtgärd",
+	"euccs-take-action-heading": "Vidta åtgärd!",
+	"euccs-take-action-text": "Berätta för dina representanter i EU-parlamentet hur detta påverkar dig:",
+	"euccs-call-to-action-heading-html": "Det är dags för en uppdatering.<br /><em>Berätta för Europaparlamentet<br /> att <span class=\"highlight\">fixa upphovsrättslagarna.</span></em>",
+	"euccs-footer-links": "[https://wikimediafoundation.org/privacy-policy/ Integritetspolicy] · [https://wikimediafoundation.org/about/ Om Wikimedia Foundation]",
+	"euccs-trademarks-hint": "Wikipedia® och andra Wikimedia-projektnamn samt logotyper är registrerade varumärken av Wikimedia Foundation, en ideell organisation.",
+	"euccs-licence-hint": "Texten är tillgänglig under Creative Commons Erkännande-DelaLika 4.0 Internationell, ytterligare villkor kan gälla.",
+	"euccs-wikimedia-foundation-link-title": "Wikimedia Foundation"
+}

@@ -51,7 +51,7 @@ class EUCopyrightCampaignSkinTemplate extends BaseTemplate {
 			<div id="call-to-action-section">
 				<h1><?php echo $this->getMsg( 'euccs-call-to-action-heading-html' )->parse() ?></h1>
 				<?php $this->printTakeActionButton( [ 'mobile' ] ); ?>
-				<?php $this->msgWiki( 'euccs-call-to-action-text' ) ?>
+				<?php $this->msg( 'euccs-call-to-action-text' ) ?>
 			</div>
 		</div>
 	</div>
@@ -70,7 +70,7 @@ class EUCopyrightCampaignSkinTemplate extends BaseTemplate {
 			<a href="https://wikimediafoundation.org/" title="<?php $this->msg( 'euccs-wikimedia-foundation-link-title' ) ?>">
 				<?php $this->printWikimediaLogo() ?>
 			</a>
-			<p><?php $this->msgWiki( 'euccs-footer-links' ) ?></p>
+			<p><?php $this->msg( 'euccs-footer-links' ) ?></p>
 			<hr />
 			<p><?php $this->msg( 'euccs-trademarks-hint' ) ?></p>
 			<p><?php $this->msg( 'euccs-licence-hint' ) ?></p>

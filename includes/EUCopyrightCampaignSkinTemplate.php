@@ -96,7 +96,7 @@ class EUCopyrightCampaignSkinTemplate extends BaseTemplate {
 		}
 
 		usort( $options, function ( $a, $b ) {
-			return $a['label'] > $b['label'];
+			return $a['label'] <=> $b['label'];
 		} );
 		// In anonymous context this is chosen by "Accept-Language" header,
 		// within the Extension:UniversalLanguageSelector

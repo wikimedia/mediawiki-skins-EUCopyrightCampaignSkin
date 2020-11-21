@@ -101,6 +101,7 @@ class EUCopyrightCampaignSkinTemplate extends BaseTemplate {
 		// In anonymous context this is chosen by "Accept-Language" header,
 		// within the Extension:UniversalLanguageSelector
 		$currentLangCode = $this->getSkin()->getLanguage()->getCode();
+		// @phan-suppress-next-line PhanPossiblyUndeclaredVariable Guaranteed to be set
 		if ( !in_array( $languageCode, $this->getSkin()->euMemberLanguagesLanguageCodes ) ) {
 			// Fallback if unsupported language
 			$currentLangCode = 'en';
